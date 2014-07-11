@@ -27,6 +27,8 @@ $('#map').data('SaarLK').hov('NK');
 
 ````
 
+[Online demo](http://jsfiddle.net/RobertKolatzek/dqJd6/embedded/result/)
+
 ## Documentation
 
 ````javascript
