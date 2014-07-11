@@ -8,8 +8,8 @@ A jQuery plugin for a interactive maps of Saarland. Every Landkreis (district) c
 Once included into head:
 
 ````javascript
-<script src="path/to/jquery-version.min.js"></script>
-<script src="path/to/jquery.saarlk.js"></script>
+<script src="path/to/jquery-version.min.js"> </script>
+<script src="path/to/jquery.saarlk.js"> </script>
 ````
 
 put the function calls into the body (bottom) or in a _$(document.)ready()_ in the head of the page.
@@ -33,7 +33,9 @@ $('#map').data('SaarLK').hov('NK');
 $(selector).SaarLK(options);
 ````
 
-**SaarLK** - initialize given elements: Put SVG into it and create jQuery objects with options.
+**SaarLK** - initialize given elements: Puts SVG into it and creates jQuery objects with options.
+
+**options** - a string literal with css attributes for SVG (not HTML!) _fill_ **not** _background-color_, _stroke_ **not** _border-color_, _'stroke-line'_ **not** _border-width._. Colors as hex values, not names.
 
 Defaut options are:
 
@@ -42,8 +44,6 @@ fill: '#ffbb99',
 stroke: '#646464',
 "stroke-width": 1.5
 ````
-
-**options** - a string literal with css attributes for SVG (not HTML!) _fill_ **not** _background-color_, _stroke_ **not** _border-color_, _'stroke-line'_ **not** _border-width._. Colors as hex values, not names.
 
 On initialization every element from *selector* will get css class **SaarLK** and a number (sequence number of actual selection) as css class. 
 
